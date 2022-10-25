@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/*Header*/
+
+header {
+    background: #181818;
+    padding: 24px 0;
+}
+
+header .container {
+    padding: 0 20px 0 32px;
+}
+
+header .container.d-flex {
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-right: 32px;
+}
+
+header nav ul li:first-child {
+    margin-right: 56px;
+}
+
+header nav ul li:last-child {
+    margin: 0;
+}
+
+header nav ul li:nth-child(1) a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+header nav ul li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header nav ul li:last-child a {
+    padding: 9px 22px 13px;
+    background: #FFFFFF;
+    border-radius: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+}
+
+/* Aperture Studios */
+
+.aperture-studios {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    height: 100vh;
+    background-image: url(../images/aperture.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 71px;
+}
+
+.aperture-text {
+    max-width: 600px;
+    text-align: center;
+}
+
+.aperture-text h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+}
+
+.aperture-text h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 59px;
+    color: #FFFFFF;
+    margin-bottom: 18px;
+}
+
+.aperture-text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+.characteristics {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.characteristics ul {
+    display: flex;
+    list-style: none;
+}
+
+.characteristics li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    margin-left: 16px;
+    display: flex;
+}
+
+.characteristics li img {
+    margin-right: 7px;
+}
+
+/* What we do */
+
+.what-we-do {
+    padding: 113px 0 100px;
+}
+
+.what-we-do .container {
+    max-width: 1168px;
+}
+
+.what-we-do .title {
+    text-align: center;
+}
+
+.what-we-do .title h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.what-we-do .title h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
+    color: #C0C0C0;
+    margin-bottom: 42px;
+}
+
+.products {
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height: 1216px;
+}
+
+.products article {
+    max-width: 576px;
+    position: relative;
+}
+
+.products .description {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    padding-right: 30px;
+}
+
+.products .description h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.products .description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #FFFFFF;
+    border-radius: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    color: #000000;
+    padding: 9px 10px 13px 42px;
+    position: relative;
+}
+
+.btn:before {
+    content: "";
+    display: block;
+    height: 32px;
+    left: 4px;
+    bottom: 5px;
+    position: absolute;
+    width: 32px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+/* Sunset at Mount Fuji */
+
+.sunset {
+    min-height: 600px;
+    background-image: url("../images/sunset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    padding-right: 60px;
+}
+
+.depiction {
+    max-width: 300px;
+}
+
+.depiction h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.depiction p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C0C0C0;
+}
+
+/* The tools that we use */
+
+.tools {
+    padding: 173px 0 153px;
+    position: relative;
+}
+
+.tools .container {
+    max-width: 1240px;
+}
+
+.tools h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    margin-bottom: 6px;
+}
+
+.tools h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+.tools p {
+    max-width: 514px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.tools-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../images/tools.jpg');
+    background-size: cover;
+}
+
+/* Monstera Leafs */
+
+.monstera {
+    min-height: 600px;
+    background-image: url("../images/monstera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    padding-right: 60px;
+}
+
+/* Past clients */
+
+.past-clients {
+    padding: 120px 0 100px;
+}
+
+.past-clients .container {
+    max-width: 1076px;
+}
+
+.past-clients h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.past-clients h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #C0C0C0;
+    margin-bottom: 42px;
+}
+
+.clients {
+    align-items: center;
+    padding: 40px 0;
+}
+
+
+/* Starfall */
+
+.starfall {
+    min-height: 600px;
+    background-image: url("../images/starfall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    padding-right: 60px;
+}
+
+/* Help */
+
+.help {
+    padding: 120px 0 100px;
+}
+
+.help .container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.help h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.help h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #C0C0C0;
+    margin-bottom: 22px;
+}

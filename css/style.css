@@ -36,6 +36,9 @@ body {
 header {
     background: #181818;
     padding: 24px 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 header .container {
@@ -143,9 +146,6 @@ header nav ul li:last-child a {
     position: absolute;
     bottom: 40px;
     right: 40px;
-}
-
-.characteristics ul {
     display: flex;
     list-style: none;
 }
@@ -156,18 +156,42 @@ header nav ul li:last-child a {
     font-size: 12px;
     line-height: 12px;
     color: #FFFFFF;
-    margin-left: 16px;
-    display: flex;
+    margin-right: 24px;
 }
 
-.characteristics li img {
-    margin-right: 7px;
+.characteristics li:before {
+    content: "";
+    background-image: url(../images/characteristics-1.svg);
+    background-repeat: no-repeat;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    bottom: -5px;
+    right: 5px;
+    position: relative;
+}
+
+.characteristics li:nth-child(2):before {
+    content: "";
+    background-image: url(../images/characteristics-2.svg);
+}
+
+.characteristics li:nth-child(3):before {
+    content: "";
+    background-image: url(../images/characteristics-3.svg);
+    width: 32px;
+}
+
+.characteristics li:nth-child(4):before {
+    content: "";
+    background-image: url(../images/characteristics-4.svg);
+    width: 10px;
 }
 
 /* What we do */
 
 .what-we-do {
-    padding: 113px 0 100px;
+    padding: 113px 0 84px;
 }
 
 .what-we-do .container {
@@ -199,19 +223,19 @@ header nav ul li:last-child a {
 .products {
     flex-wrap: wrap;
     align-content: space-between;
-    min-height: 1216px;
 }
 
 .products article {
     max-width: 576px;
     position: relative;
+    margin-bottom: 16px;
 }
 
 .products .description {
     position: absolute;
     left: 30px;
     bottom: 30px;
-    padding-right: 30px;
+    right: 30px;
 }
 
 .products .description h4 {
@@ -243,17 +267,17 @@ header nav ul li:last-child a {
     line-height: 20px;
     letter-spacing: 0.4px;
     color: #000000;
-    padding: 9px 10px 13px 42px;
-    position: relative;
+    padding: 5px 10px 5px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 143px;
 }
 
 .btn:before {
     content: "";
     display: block;
     height: 32px;
-    left: 4px;
-    bottom: 5px;
-    position: absolute;
     width: 32px;
     background-color: #000000;
     border-radius: 50%;
@@ -437,4 +461,8 @@ header nav ul li:last-child a {
     line-height: 30px;
     color: #C0C0C0;
     margin-bottom: 22px;
+}
+
+.help .btn {
+    margin: auto;
 }

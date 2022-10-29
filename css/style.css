@@ -220,9 +220,18 @@ header nav ul li:last-child a {
     margin-bottom: 42px;
 }
 
+.ui-widget-content {
+    background-color: #000000;
+    border: none;
+}
+
+.ui-accordion .ui-accordion-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1168px;
+}
+
 .products {
-    flex-wrap: wrap;
-    align-content: space-between;
 }
 
 .products article {

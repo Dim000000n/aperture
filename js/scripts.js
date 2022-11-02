@@ -1,3 +1,22 @@
 $( function() {
     $( "#accordion" ).accordion();
 } );
+
+$('.owl-carousel').owlCarousel({
+    dotsEach:true,
+    loop:true,
+    margin:0,
+    nav:true,
+    navText: [ '', ' ' ],
+    // autoplay: true,
+    autoplayTimeout:2000,
+    responsive:{
+        0:{
+            items:1
+        },
+
+        1000:{
+            items:4
+        }
+    }
+});

@@ -37,7 +37,7 @@ header {
     background: #181818;
     padding: 24px 0;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
 }
 
@@ -220,6 +220,12 @@ header nav ul li:last-child a {
     margin-bottom: 42px;
 }
 
+.ui-accordion .ui-accordion-header {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
 .ui-widget-content {
     background-color: #000000;
     border: none;
@@ -229,9 +235,54 @@ header nav ul li:last-child a {
     display: flex;
     justify-content: space-between;
     max-width: 1168px;
+    padding: 0;
 }
 
-.products {
+.ui-accordion .ui-accordion-header.ui-state-hover .ui-icon {
+    background-image: none;
+}
+
+@keyframes slide_left {
+    0%{
+        left: -15px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon, .ui-icon, .ui-widget-content .ui-icon  {
+    background-image: none;
+    background-position: 0;
+    text-indent: 0;
+    margin: 0;
+    position: relative;
+    top: 0px;
+    left: -10px;
+    display: inline-block;
+    transform: rotate(90deg);
+    animation: slide_left 1.5s infinite ;
+}
+
+.ui-icon:after {
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    content: "\f078";
+}
+
+@keyframes slide {
+    0%{
+        top: -15px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+.ui-accordion-header.ui-state-active .ui-icon {
+    transform: rotate(0);
+    top: -5px;
+    animation: slide 1.5s infinite ;
 }
 
 .products article {
@@ -427,6 +478,73 @@ header nav ul li:last-child a {
     align-items: center;
     padding: 40px 0;
 }
+
+.clients .company img {
+    max-width: 128px;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
+
+
+.owl-carousel .owl-stage-outer .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+.past-clients .owl-nav {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.past-clients .owl-carousel .owl-nav button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    transition:.1s ease;
+}
+
+.past-clients .owl-carousel .owl-nav button:active {
+    background-color: gray;
+}
+
+.past-clients .owl-carousel .owl-nav button.owl-next:before, button.owl-prev:before {
+    font-weight: 900;
+    font-family: "Font Awesome 6 Free";
+    content: "\f054";
+}
+
+.past-clients .owl-carousel .owl-nav button.owl-prev {
+    transform: rotate(180deg);
+}
+
+.past-clients .owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.past-clients .owl-carousel .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: transparent;
+    display: block;
+    transition: .5s ease;
+    border-radius: 50%;
+    border: 2px solid #D6D6D6;
+}
+
+.past-clients .owl-carousel .owl-dots .owl-dot.active span, .past-clients .owl-carousel .owl-dots .owl-dot:hover span {
+    background: #dbdbdb;
+}
+
 
 
 /* Starfall */

@@ -1031,11 +1031,11 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .past-clients .owl-carousel .owl-nav button.owl-next {
-    right: 15px;
+    right: 0;
 }
 
 .past-clients .owl-carousel .owl-nav button.owl-prev {
-    left: 15px;
+    left: 0;
 }
 
 .past-clients .owl-carousel .owl-nav button:active {

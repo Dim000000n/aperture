@@ -1,4 +1,40 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+    .nav-but-wrap{
+        display: inline-block;
+    }
+
+    .nav__content {
+        position: fixed;
+        visibility: hidden;
+        top: 50%;
+        -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+    }
+
+    .nav {
+        position: fixed;
+    }
+
+    .nav__list {
+        position: relative;
+        display: block;
+    }
+
+
+
+    .nav__list-item, .nav__list-item:first-child {
+        opacity: 0;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .nav__list-item:nth-child(1) a {
+        font-size: 30px;
+    }
+
+    .nav__list-item a,.nav__list-item:last-child a  {
+        font-size: 27px;
+    }
 
 }
 

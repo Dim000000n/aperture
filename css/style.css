@@ -1014,8 +1014,6 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .past-clients .owl-nav {
-    position: absolute;
-    top: 30%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -1023,11 +1021,21 @@ body.light .switch-wrap p span:nth-child(1):before {
 }
 
 .past-clients .owl-carousel .owl-nav button {
+    top: 30%;
+    position: absolute;
     width: 30px;
     height: 30px;
     background-color: white;
     border-radius: 50%;
     transition:.1s ease;
+}
+
+.past-clients .owl-carousel .owl-nav button.owl-next {
+    right: 15px;
+}
+
+.past-clients .owl-carousel .owl-nav button.owl-prev {
+    left: 15px;
 }
 
 .past-clients .owl-carousel .owl-nav button:active {
